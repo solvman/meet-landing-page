@@ -61,4 +61,17 @@ body {
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-body);
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height-lg);
+}
+
+h2 {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height-md);
 }
