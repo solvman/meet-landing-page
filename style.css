@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --color-primary-100: hsla(0, 0%, 98%, 1);
+  --color-primary-800: hsla(240, 21%, 20%, 1);
+  --color-accent-500: hsla(192, 37%, 48%, 1);
+  --color-accent-400: hsla(268, 34%, 53%, 1);
+  --color-neutral-400: hsla(240, 10%, 57%, 1);
+  --color-neutral-300: hsla(192, 90%, 77%, 1);
+  --color-neutral-200: hsla(268, 100%, 86%, 1);
+
+  --font-family-default: "Red Hat Display", sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-black: 900;
+
+  --font-size-xs: 1rem; /* 16px */
+  --font-size-sm: 1.125rem; /* 18px */
+  --font-size-md: 2rem; /* 32px */
+  --font-size-lg: 2.5rem; /* 40px */
+  --font-size-xl: 3rem; /* 48px */
+  --font-size-xxl: 4rem; /* 64px */
+
+  --line-height-body: 1.625rem; /* 26px */
+  --line-height-md: 2.25rem; /* 36px */
+  --line-height-lg: 2.75rem; /* 44px */
+  --line-height-xl: 3rem; /* 48px */
+  --line-height-xxl: 4rem; /* 64px */
+}
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+/* Styles */
+
+body {
+  color: var(--color-primary-800);
+  background-color: var(--color-primary-100);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-body);
+}
