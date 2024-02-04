@@ -130,9 +130,32 @@ body {
 }
 
 h1 {
-  font-size: var(--font-size-lg);
+  font-size: clamp(
+    var(--font-size-lg),
+    2.0229rem + 2.0356vw,
+    var(--font-size-xl)
+  );
+  line-height: clamp(
+    var(--line-height-lg),
+    2.5115rem + 1.0178vw,
+    var(--line-height-xl)
+  );
   font-weight: var(--font-weight-black);
-  line-height: var(--line-height-lg);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: clamp(
+      var(--font-size-xl),
+      1.8571rem + 2.381vw,
+      var(--font-size-xxl)
+    );
+    line-height: clamp(
+      var(--line-height-xl),
+      1.8571rem + 2.381vw,
+      var(--line-height-xxl)
+    );
+  }
 }
 
 h2 {
@@ -239,7 +262,6 @@ footer {
   position: relative;
   background-image: url("/assets/mobile/image-footer.jpg");
   background-repeat: no-repeat;
-  /* background-position: center center; */
   background-size: cover;
 }
 
