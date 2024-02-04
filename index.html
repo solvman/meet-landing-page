@@ -21,24 +21,63 @@
         <img
           src="./assets/tablet/image-hero.png"
           alt
+          width="820"
+          height="303"
           class="hero__img"
           aria-hidden="true"
         />
-        <h1 class="hero__title">Group Chat for Everyone</h1>
-        <p class="hero__text">
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
+        <h1 class="hero__title">
+          Group Chat<br />
+          for Everyone
+        </h1>
+        <p class="hero__text wrapper">
+          Meet makes it easy to connect with others
+          <span class="no-wrap">face-to-face</span> virtually and collaborate
+          across any device.
         </p>
         <nav>
-          <button>Download v1.3</button>
-          <button>What is it?</button>
+          <button class="button">Download <span>v1.3</span></button>
+          <button class="button button--sm button--accent">What is it?</button>
         </nav>
       </section>
-      <section>
-        <p>01</p>
+      <section class="features wrapper">
+        <p class="divider">01</p>
+        <figure class="features__images">
+          <img
+            src="./assets/desktop/image-woman-in-videocall.jpg"
+            alt="woman in a video call"
+            class="features__img"
+            width="510"
+            height="484"
+          />
+          <img
+            src="./assets/desktop/image-women-videochatting.jpg"
+            alt="three women video chatting"
+            class="features__img"
+            width="510"
+            height="484"
+          />
+          <img
+            src="./assets/desktop/image-men-in-meeting.jpg"
+            alt="man in a meeting"
+            class="features__img"
+            width="510"
+            height="484"
+          />
+          <img
+            src="./assets/desktop/image-man-texting.jpg"
+            alt="man texting"
+            class="features__img"
+            width="510"
+            height="484"
+          />
+          <figcaption class="sr-only">
+            Collage of pohotos of people using meet app
+          </figcaption>
+        </figure>
         <p class="overline">Built for modern use</p>
-        <h2>Smarter meetings, all in one place</h2>
-        <p>
+        <h2 class="features__title">Smarter meetings, all in one place</h2>
+        <p class="features__text">
           Send messages, share files, show your screen, and record your meetings
           — all in one workspace. Control who can join with invite-only team
           access, data encryption, and data export.
@@ -46,13 +85,19 @@
       </section>
     </main>
     <footer>
-      <p>02</p>
-      <h2>Experience more together</h2>
-      <p>
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </p>
-      <button>Download v1.3</button>
+      <p class="divider">02</p>
+      <div class="footer-background">
+        <div class="footer wrapper">
+          <h2>Experience more together</h2>
+          <p>
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <button class="button button--accent">
+            Download <span>v1.3</span>
+          </button>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
