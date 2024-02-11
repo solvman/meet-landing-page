@@ -321,6 +321,18 @@ footer {
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-background {
+    background-image: url("/assets/tablet/image-footer.jpg");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-background {
+    background-image: url("/assets/desktop/image-footer.jpg");
+  }
+}
+
 .footer-background::before {
   content: "";
   position: absolute;
