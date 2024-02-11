@@ -209,6 +209,9 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+.hero__img-desktop {
+  display: none;
+}
 
 .hero__img {
   width: 108%;
