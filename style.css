@@ -403,7 +403,7 @@ footer {
   }
 
   .footer__content {
-    margin-inline: auto;
+    margin-inline: 5vw;
     max-width: 1110px;
     flex-direction: row;
     align-items: center;
@@ -412,6 +412,7 @@ footer {
 
   .footer__content > * {
     text-align: left;
+    min-width: 200px;
     max-width: 350px;
     margin: 0;
   }
