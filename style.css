@@ -139,16 +139,6 @@ body {
   min-width: 375px;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    font-size: clamp(
-      var(--font-size-xs),
-      0.8571rem + 0.2976vw,
-      var(--font-size-sm)
-    );
-  }
-}
-
 h1 {
   font-size: clamp(
     var(--font-size-lg),
@@ -161,21 +151,6 @@ h1 {
     var(--line-height-xl)
   );
   font-weight: var(--font-weight-black);
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: clamp(
-      var(--font-size-xl),
-      1.8571rem + 2.381vw,
-      var(--font-size-xxl)
-    );
-    line-height: clamp(
-      var(--line-height-xl),
-      1.8571rem + 2.381vw,
-      var(--line-height-xxl)
-    );
-  }
 }
 
 h2 {
@@ -295,19 +270,6 @@ footer {
   border-radius: 0.5rem;
 }
 
-@media screen and (min-width: 760px) {
-  .features__img {
-    width: 22%;
-    max-width: 164px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .features__img {
-    max-width: 255px;
-  }
-}
-
 .features__title {
   margin-top: 1.5rem;
 }
@@ -322,18 +284,6 @@ footer {
   background-image: url("/assets/mobile/image-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-background {
-    background-image: url("/assets/tablet/image-footer.jpg");
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .footer-background {
-    background-image: url("/assets/desktop/image-footer.jpg");
-  }
 }
 
 .footer-background::before {
@@ -360,6 +310,58 @@ footer {
 
 .footer__content > button {
   margin-top: 2rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: clamp(
+      var(--font-size-xs),
+      0.8571rem + 0.2976vw,
+      var(--font-size-sm)
+    );
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: clamp(
+      var(--font-size-xl),
+      1.8571rem + 2.381vw,
+      var(--font-size-xxl)
+    );
+    line-height: clamp(
+      var(--line-height-xl),
+      1.8571rem + 2.381vw,
+      var(--line-height-xxl)
+    );
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .features__img {
+    width: 22%;
+    max-width: 164px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .features__img {
+    max-width: 255px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-background {
+    background-image: url("/assets/tablet/image-footer.jpg");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-background {
+    background-image: url("/assets/desktop/image-footer.jpg");
+  }
 }
 
 @media screen and (min-width: 968px) {
