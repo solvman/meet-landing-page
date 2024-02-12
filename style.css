@@ -402,9 +402,14 @@ footer {
     right: -3%;
   }
 
+  .footer-background {
+    display: flex;
+    justify-content: center;
+  }
+
   .footer__content {
     margin-inline: 5vw;
-    max-width: 1110px;
+    width: min(1110px, 100%);
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
